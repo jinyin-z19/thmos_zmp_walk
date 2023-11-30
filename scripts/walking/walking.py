@@ -167,8 +167,8 @@ class walking():
     lo = self.left_off  - np.block([[X[0,0:2],0]])
     ro = self.right_off - np.block([[X[0,0:2],0]])
     
-    left_foot  = [lo[0,0] + self.com_x_offset, lo[0,1] + self.com_y_offset + self.ex_foot_width, self.left_up * self.foot_step_now[9]-  self.full_leg_length, 0.0, 0.0, self.th-lo[0,2]]
-    right_foot = [ro[0,0] + self.com_x_offset, ro[0,1] + self.com_y_offset - self.ex_foot_width, self.right_up * self.foot_step_now[9]- self.full_leg_length, 0.0, 0.0, self.th-ro[0,2]]
+    left_foot  = [lo[0,0] + self.com_x_offset, lo[0,1] + self.com_y_offset + self.ex_foot_width, self.left_up * self.foot_step_now[9]-  self.trunk_height, 0.0, 0.0, self.th-lo[0,2]]
+    right_foot = [ro[0,0] + self.com_x_offset, ro[0,1] + self.com_y_offset - self.ex_foot_width, self.right_up * self.foot_step_now[9]- self.trunk_height, 0.0, 0.0, self.th-ro[0,2]]
 
     l_joint_angles = self.kine.LegIKMove('left',left_foot)
     r_joint_angles = self.kine.LegIKMove('right',right_foot)
