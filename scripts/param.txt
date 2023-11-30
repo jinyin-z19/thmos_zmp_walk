@@ -10,7 +10,7 @@
 0.0
 #'com_y_offset' : 
 0.0
-#'full_leg_length' : 
+#'trunk_height' : 
 0.29
 #'optimize_period' : 
 1.2
