@@ -20,7 +20,7 @@ class zmp_walker:
             'com_height' : param[3],
             'com_x_offset' : param[4],
             'com_y_offset' :param[5],
-            'full_leg_length' : param[6],
+            'trunk_height' : param[6],
             'optimize_period' : param[7],
             'walking_period' : param[8],
             'both_foot_support_time' : param[9],
